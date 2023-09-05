@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylee.css">
+</head>
+
+<body>
+    <p>Play Audio</p>
+
+    <div class="action-btns">
+        <button class="btn play">Play</button>
+        <button class="btn pause">Pause</button>
+
+        <script>
+            let playBtn = document.getElementsByClassName("play");
+            let pauseBtn = document.getElementsByClassName("pause");
+
+            let text = document.querySelector("p");
+
+            const audio = new Audio("./audio.mp3");
+
+            playBtn[0].addEventListener("click", (e) => {
+                audio.play();
+                text.innerHTML = "Audio Playing🔊";
+            });
+
+            pauseBtn[0].addEventListener("click", (e) => {
+                audio.pause();
+                text.innerHTML = "Audio Paused";
+            });
+        </script>
+
+    </div>
+</body>
+
+</html>

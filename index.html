@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Happy Birthday ANJU </title>
+  <link rel="stylesheet" type="text/css" href="https://demo.plantpot.works/assets/css/normalize.css">
+  <link rel="stylesheet" href="https://use.typekit.net/opg3wle.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div id="container">
+    <a href="Birthday.html">
+      <div class="heart-like-button" style="text-decoration: none;">
+      </div>
+    </a>
+    <h3 style=" text-decoration: none;">Click on Heart</h3>
+  </div>
+
+
+  <script>
+    const button = document.querySelector(".heart-like-button");
+
+    button.addEventListener("click", () => {
+      if (button.classList.contains("liked")) {
+        button.classList.remove("liked");
+      } else {
+        button.classList.add("liked");
+      }
+    });
+  </script>
+</body>
+
+</html>
